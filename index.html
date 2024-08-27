@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img class="logo" src="/Imagens/Logo.png" alt="Logo da Alura">
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="input-area">
+                <textarea class="input-text" placeholder="Digite seu texto aqui..."></textarea>
+                <div class="informativo">
+                    <img src="/Imagens/aviso.png" alt="Informativo de aviso.">
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                    <div class="left-btn">
+                        <button class="btn-encripitar" onclick="btnEncripitar()">Cripitografar</button>
+                        <button class="btn-desencripitar" onclick="btnDesencripitar()">Descripitografar</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div id="output-area" class="output-area ajustar">
+                <img id="personagem" class="personagem" src="/Imagens/Imagem.png" alt="Logo da Alura">
+                
+                    <textarea id="mensagem-final" class="mensagem-final ajustar" placeholder="Nenhuma mensagem encontrada."></textarea>
+                    <p id="informacao-saida" class="informacao-saida ocultar">Digite um texto que você deseja cripitografar ou descripitografar.</p>
+                
+                <button class="btn-copiar oculto">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Thiago Aguiar</p>
+        <div class="icons">
+            <a href="https://github.com/me50/othiagoaguiar"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/thiago-aguiar-ep/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
